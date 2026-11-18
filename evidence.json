@@ -1,0 +1,82 @@
+{
+  "address": "0x2acb36572A006f4d20f575226C2b6cDb14e585EB",
+  "owner": "0x8d08c6fc6a5ef508298991e47b9755a5c7cf5fe2",
+  "key": "christmas-cutoff",
+  "record": {
+    "deadline": "2026-12-30",
+    "holidays": [
+      "2026-12-25",
+      "2026-12-28",
+      "2027-01-01"
+    ],
+    "key": "christmas-cutoff",
+    "observed_through": "2027-02-07",
+    "owner": "0x8d08c6fc6a5ef508298991e47b9755a5c7cf5fe2",
+    "region": "england-and-wales",
+    "start": "2026-12-24",
+    "trace": [
+      {
+        "date": "2026-12-25",
+        "kind": "bank_holiday"
+      },
+      {
+        "date": "2026-12-26",
+        "kind": "weekend"
+      },
+      {
+        "date": "2026-12-27",
+        "kind": "weekend"
+      },
+      {
+        "date": "2026-12-28",
+        "kind": "bank_holiday"
+      },
+      {
+        "date": "2026-12-29",
+        "kind": "workday"
+      },
+      {
+        "date": "2026-12-30",
+        "kind": "workday"
+      }
+    ],
+    "working_days": 2
+  },
+  "transactions": {
+    "certified": {
+      "hash": "0x348b141f698b26e6fb2002154ab5e7478ea94e07db9bdbda569075a37d4a56a7",
+      "sender": "0x8d08c6fc6a5ef508298991e47b9755a5c7cf5fe2",
+      "method": "certify",
+      "args": [
+        "christmas-cutoff",
+        "england-and-wales",
+        "2026-12-24",
+        2
+      ]
+    },
+    "unsupported_year": {
+      "hash": "0x15128ae5fabb333f2d870ca1106ad69aceb0a73a5f8d489741454a42409f8181",
+      "sender": "0x460cf8f6b7e7ad90c8910749eeb922d1c1fa8932",
+      "method": "certify",
+      "args": [
+        "future-cutoff",
+        "scotland",
+        "2099-01-01",
+        2
+      ],
+      "reason": "OUTSIDE_PUBLISHED_YEARS"
+    },
+    "duplicate": {
+      "hash": "0x6d1755485a47cfd168c92857af608200d773913047fd96a5f32d372928c48133",
+      "sender": "0x8d08c6fc6a5ef508298991e47b9755a5c7cf5fe2",
+      "method": "certify",
+      "args": [
+        "christmas-cutoff",
+        "england-and-wales",
+        "2026-12-24",
+        2
+      ],
+      "reason": "CERTIFICATE_ALREADY_EXISTS"
+    }
+  }
+}
